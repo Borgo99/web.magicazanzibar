@@ -25,10 +25,10 @@ const TourList = ({ tours }: ITourList) => {
             router.push(tourPageUrl(tour));
           }}
         >
-          {/* <img src={`/${tour.imageFolder}/1.jpg`} alt={`${tour.title} photo`} /> */}
+          {/* <img src={`./${tour.imageFolder}/1.jpg`} alt={`${tour.title} photo`} /> */}
           <div
             className={styles.toursList__card__img}
-            style={{ backgroundImage: `url(/${tour.imageFolder}/1.jpg)` }}
+            style={{ backgroundImage: `url(/${tour.imageFolder}/1.webp)` }}
           ></div>
           <h2>{tour.title}</h2>
           <Button href={tourPageUrl(tour)}>Read more</Button>

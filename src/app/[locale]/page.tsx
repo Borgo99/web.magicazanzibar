@@ -21,16 +21,16 @@ export default function Home({ params: {} }: Readonly<Props>) {
     <main className={styles.home}>
       <section className={styles.home__header}>
         <div className={styles.home__header__logo}>
-          <img src="/logo.png" alt="Magica Zanzibar Logo" />
+          <img src="./logo.png" alt="Magica Zanzibar Logo" />
           <h2>{t("subtitle")}</h2>
           <div className={styles.home__header__socials}>
             <Socials />
           </div>
         </div>
         <div className={styles.home__header__images}>
-          <img src="/home1.jpg" alt="Zanzibar Tour" loading={"lazy"} />
-          <img src="/home2.jpg" alt="Zanzibar Tour" loading={"lazy"} />
-          <img src="/home3.jpg" alt="Zanzibar Tour" loading={"lazy"} />
+          <img src="./home1.webp" alt="Zanzibar Tour" loading={"lazy"} />
+          <img src="./home2.webp" alt="Zanzibar Tour" loading={"lazy"} />
+          <img src="./home3.webp" alt="Zanzibar Tour" loading={"lazy"} />
         </div>
       </section>
     </main>

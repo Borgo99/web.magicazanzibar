@@ -65,17 +65,17 @@ export default function TourPage({ params }: { params: Params }) {
         </div>
         <div className={styles.home__header__images}>
           <img
-            src={`/${tour.imageFolder}/1.jpg`}
+            src={`/${tour.imageFolder}/1.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
           <img
-            src={`/${tour.imageFolder}/2.jpg`}
+            src={`/${tour.imageFolder}/2.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
           <img
-            src={`/${tour.imageFolder}/3.jpg`}
+            src={`/${tour.imageFolder}/3.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
