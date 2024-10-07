@@ -1,0 +1,158 @@
+.button {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  background: linear-gradient(to bottom right, var(--color-secondary), var(--color-tertiary));
+  border-radius: 5px;
+  padding: 0.5rem 5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  width: fit-content;
+  transition: all 0.2s;
+  cursor: pointer; /* Ensure pointer behavior on hover */
+  text-decoration: none; /* Remove underline from links */
+}
+.button:hover {
+  background-color: var(--color-details);
+  text-shadow: 0px 0px 10px black;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+.socials > a {
+  transition: all .2s;
+}
+.socials > a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, .075);
+  border-radius: 10px;
+}
+
+.headbar {
+  display: flex;
+  padding: 1rem 6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.headbar__nav > a {
+  color: var(--color-details);
+  font-size: 2.6rem;
+  text-decoration: none;
+}
+.headbar__nav > a:hover,
+.headbar__nav > a:focus {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.headbar__nav {
+  display: flex;
+  gap: 4rem;
+}
+
+.websiteName {
+  font-size: 4rem;
+  line-height: 4.2rem;
+  color: var(--color-text);
+}
+.websiteName > span {
+  color: var(--color-secondary) !important;
+}
+
+.localeSwitcher {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-tertiary);
+  border: 2px solid var(--color-tertiary);
+  border-radius: 5px;
+}
+.localeSwitcher:hover {
+  cursor: pointer;
+  color: var(--color-details);
+}
+
+.toursList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-decoration: none !important;
+}
+.toursList__card {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  width: 30rem;
+  transition: all .3s;
+}
+.toursList__card:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .075);
+  transform: scale(1.05);
+}
+.toursList__card__img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.toursList__card > h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+.toursList__card > a {
+  font-size: 1.8rem;
+}
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  line-height: 1.1;
+  margin-top: 2rem;
+}
+.aboutus > h1 {
+  font-size: 4.6rem;
+  letter-spacing: 1px;}
+.aboutus > p {
+  font-size: 2rem;
+}
+.aboutus > div {
+  padding-top: 1.5rem;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  width: 100vw;
+  margin-left: calc(-1 * var(--page-padding-inline));
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer > * > a,
+.footer > a {
+  text-decoration: underline;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+.footer > a:hover {
+  color: var(--color-details);
+}

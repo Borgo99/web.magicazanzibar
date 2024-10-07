@@ -1,0 +1,105 @@
+.home {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.home__header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding-block: 3rem;
+  justify-content: space-between;
+}
+.home__header__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home__header__logo > img {
+  width: 42rem;
+  height: auto;
+  margin-left: 4rem;
+}
+.home__header__logo > h2 {
+  font-size: 2.4rem;
+  font-style: italic;
+}
+.home__header__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+.home__header__images > img {
+  width: 100%;
+  max-width: 28rem;
+  border-radius: 10px;
+}
+.home__header__images > img:nth-child(2) {
+  grid-row: 1 / 3;
+  grid-column: 2;
+}
+
+.home__tours {
+
+}
+.home__tours > h1 {
+  font-size: 4.6rem;
+  letter-spacing: 1px;
+}
+
+
+.tour {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+}
+.tour > h1 {
+  font-size: 3.2rem;
+}
+.tour > p {
+  font-size: 1.85rem;
+  line-height: 1.5;
+}
+.tour > a {
+  margin: 0 auto;
+}
+.tour__list {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  padding-right: 2rem;
+  border-radius: 5px;
+}
+.tour__list h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+.tour__list ul {
+  list-style: none; /* remove default bullet points */
+  padding-left: 2rem; /* adjust padding */
+  margin-bottom: 1.5rem; /* add spacing between lists */
+}
+.tour__list ul li {
+  position: relative; /* to position custom bullet */
+  padding-left: 1.5rem; /* space between bullet and text */
+  font-size: 1.8rem; /* slightly larger font */
+  line-height: 1.5; /* improve readability */
+}
+.tour__list ul li::before {
+  content: "❖"; /* replace with a fancy bullet symbol */
+  position: absolute;
+  left: -5px;
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+.tour__list ul li:hover {
+  color: #2980b9; /* subtle color change on hover */
+}
+
+
