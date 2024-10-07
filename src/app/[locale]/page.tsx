@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 // import path from "path";
 import Socials from "../_components/Socials";
 import styles from "../_styles/pages.module.css";
+import { baseUrl } from "../_components/baseUrl";
 
 type Props = {
   params: { locale: string };
@@ -21,16 +22,28 @@ export default function Home({ params: {} }: Readonly<Props>) {
     <main className={styles.home}>
       <section className={styles.home__header}>
         <div className={styles.home__header__logo}>
-          <img src="./logo.png" alt="Magica Zanzibar Logo" />
+          <img src={`${baseUrl}/logo.png`} alt="Magica Zanzibar Logo" />
           <h2>{t("subtitle")}</h2>
           <div className={styles.home__header__socials}>
             <Socials />
           </div>
         </div>
         <div className={styles.home__header__images}>
-          <img src="./home1.webp" alt="Zanzibar Tour" loading={"lazy"} />
-          <img src="./home2.webp" alt="Zanzibar Tour" loading={"lazy"} />
-          <img src="./home3.webp" alt="Zanzibar Tour" loading={"lazy"} />
+          <img
+            src={`${baseUrl}/home1.webp`}
+            alt="Zanzibar Tour"
+            loading={"lazy"}
+          />
+          <img
+            src={`${baseUrl}/home2.webp`}
+            alt="Zanzibar Tour"
+            loading={"lazy"}
+          />
+          <img
+            src={`${baseUrl}/home3.webp`}
+            alt="Zanzibar Tour"
+            loading={"lazy"}
+          />
         </div>
       </section>
     </main>

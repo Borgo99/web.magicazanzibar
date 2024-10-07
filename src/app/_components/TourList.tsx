@@ -5,6 +5,7 @@ import { ITour } from "./interfaces";
 import Button from "./Button";
 import { usePathname, useRouter } from "next/navigation";
 import styles from "../_styles/components.module.css";
+import { baseUrl } from "./baseUrl";
 
 interface ITourList {
   tours: ITour[];
@@ -28,7 +29,9 @@ const TourList = ({ tours }: ITourList) => {
           {/* <img src={`./${tour.imageFolder}/1.jpg`} alt={`${tour.title} photo`} /> */}
           <div
             className={styles.toursList__card__img}
-            style={{ backgroundImage: `url(/${tour.imageFolder}/1.webp)` }}
+            style={{
+              backgroundImage: `url(${baseUrl}/${tour.imageFolder}/1.webp)`,
+            }}
           ></div>
           <h2>{tour.title}</h2>
           <Button href={tourPageUrl(tour)}>Read more</Button>

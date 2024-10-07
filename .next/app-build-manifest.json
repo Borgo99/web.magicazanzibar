@@ -36,7 +36,7 @@
       "static/chunks/main-app-7b62e25eaefdfe97.js",
       "static/css/085e5aa89df5146b.css",
       "static/chunks/586-26acaa0655fdfffa.js",
-      "static/chunks/app/[locale]/page-60544eb1d66f8805.js"
+      "static/chunks/app/[locale]/page-090fd445eadf8c15.js"
     ],
     "/[locale]/layout": [
       "static/chunks/webpack-9b9b8c477971033f.js",
@@ -48,7 +48,7 @@
       "static/chunks/586-26acaa0655fdfffa.js",
       "static/chunks/972-72144da65edfe2eb.js",
       "static/chunks/443-c0428dd8f9fc3dea.js",
-      "static/chunks/app/[locale]/layout-fe5c29bd5baf0990.js"
+      "static/chunks/app/[locale]/layout-ece7d396c2513ab1.js"
     ],
     "/[locale]/[tour_id]/[tour_slug]/page": [
       "static/chunks/webpack-9b9b8c477971033f.js",
