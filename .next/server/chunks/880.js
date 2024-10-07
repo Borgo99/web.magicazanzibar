@@ -1,0 +1,1 @@
+"use strict";exports.id=880,exports.ids=[880],exports.modules={1880:e=>{e.exports=JSON.parse('{"Home":{"subtitle":"Parti con noi per un\'avventura indimenticabile!","popular_tours":"Tour popolari"},"LocaleSwitcher":{"locale":"{locale, select, it {Italiano} en {English} other {inconnu}}"}}')}};
