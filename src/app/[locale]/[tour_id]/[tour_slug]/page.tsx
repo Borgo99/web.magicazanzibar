@@ -2,6 +2,7 @@ import styles from "../../../_styles/pages.module.css";
 import data from "../../../../data/tours.json";
 import { ITour } from "@/app/_components/interfaces";
 import BookButton from "@/app/_components/BookButton";
+import Image from "next/image";
 
 const tours: Record<string, ITour[]> = data as Record<string, ITour[]>;
 
@@ -64,17 +65,17 @@ export default function TourPage({ params }: { params: Params }) {
           </p>
         </div>
         <div className={styles.home__header__images}>
-          <img
+          <Image
             src={`/${tour.imageFolder}/1.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
-          <img
+          <Image
             src={`/${tour.imageFolder}/2.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
-          <img
+          <Image
             src={`/${tour.imageFolder}/3.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
