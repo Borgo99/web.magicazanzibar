@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <Link href={`${pathname.slice(0, 1)}`}>Home</Link>
-      <Link href={`${pathname}/#tours`}>Tours</Link>
+      <Link href={`${pathname}#tours`}>Tours</Link>
       <Socials />
       <p>
         Contact us to:{" "}

@@ -14,7 +14,7 @@ const Headbar = () => {
       <WebsiteName />
       <div className={styles.headbar__nav}>
         <Link href={`${pathname.slice(0, 1)}`}>Home</Link>
-        <Link href={`${pathname}/#tours`}>Tours</Link>
+        <Link href={`${pathname}#tours`}>Tours</Link>
         <LocaleSwitcher />
       </div>
     </div>

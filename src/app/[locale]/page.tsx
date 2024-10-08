@@ -15,7 +15,12 @@ export default function Home({ params: {} }: Readonly<Props>) {
     <section className={styles.home}>
       <section className={styles.home__header}>
         <div className={styles.home__header__logo}>
-          <img src={`${baseUrl}/logo.png`} alt="Magica Zanzibar Logo" />
+          <img
+            src={`${baseUrl}/logo.png`}
+            alt="Magica Zanzibar Logo"
+            height={400}
+            width={400}
+          />
           <h2>{t("subtitle")}</h2>
         </div>
         <div className={styles.home__header__socials}>
@@ -26,16 +31,21 @@ export default function Home({ params: {} }: Readonly<Props>) {
             src={`${baseUrl}/home1.webp`}
             alt="Zanzibar Tour"
             loading={"lazy"}
+            width={250}
+            height={300}
           />
           <img
             src={`${baseUrl}/home2.webp`}
             alt="Zanzibar Tour"
-            loading={"lazy"}
+            width={250}
+            height={300}
           />
           <img
             src={`${baseUrl}/home3.webp`}
             alt="Zanzibar Tour"
             loading={"lazy"}
+            width={250}
+            height={300}
           />
         </div>
       </section>

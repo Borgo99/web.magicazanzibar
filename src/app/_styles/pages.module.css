@@ -42,6 +42,7 @@
 .home__header__images > img {
   width: 100%;
   max-width: 28rem;
+  height: auto;
   border-radius: 10px;
 }
 .home__header__images > img:nth-child(2) {

@@ -29,12 +29,21 @@ const TourList = ({ tours }: ITourList) => {
           }}
         >
           {/* <img src={`./${tour.imageFolder}/1.jpg`} alt={`${tour.title} photo`} /> */}
-          <div
+          {/* <div
             className={styles.toursList__card__img}
             style={{
               backgroundImage: `url(${baseUrl}/${tour.imageFolder}/1.webp)`,
             }}
-          ></div>
+          ></div> */}
+          <div className={styles.toursList__card__img}>
+            <img
+              width={200}
+              height={200}
+              src={`${baseUrl}/${tour.imageFolder}/1.webp`}
+              alt={`${tour.title} photo`}
+              loading={"lazy"}
+            />
+          </div>
           <h2>{tour.title}</h2>
           <Button href={tourPageUrl(tour)}>{t("read_more")}</Button>
         </li>

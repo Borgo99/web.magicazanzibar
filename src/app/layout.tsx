@@ -1,8 +1,18 @@
 import { ReactNode } from "react";
 import "./globals.css";
+import { Metadata } from "next";
 
 type Props = {
   children: ReactNode;
+};
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+  },
+  alternates: {
+    canonical: "./en",
+  },
 };
 
 // Since we have a `not-found.tsx` page on the root, a layout file

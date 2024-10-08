@@ -10,6 +10,33 @@ import Footer from "../_components/Footer";
 import data from "../../data/tours.json";
 import ToursListSection from "../_components/ToursListSection";
 
+const metadata_by_lang: Record<string, Metadata> = {
+  en: {
+    title: "Magica Zanzibar",
+    description: "Discover the magic of Zanzibar with a private tour.",
+  },
+  it: {
+    title: "Magica Zanzibar",
+    description: "Scopri la magica Zanzibar con un tour privato.",
+  },
+};
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  return {
+    ...metadata_by_lang[locale],
+    creator: "Borgo",
+    robots: {
+      index: "all",
+    },
+    // alternates: {
+    //   languages: {
+    //     it: "/it",
+    //     en: "/en",
+    //   },
+    // },
+  } as unknown as Metadata;
+}
+
 const tours: Record<string, ITour[]> = data as Record<string, ITour[]>;
 
 async function getMessages(locale: string) {
@@ -36,11 +63,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Magica Zanzibar",
-  description: "Embark on an unforgettable adventure with us!",
-};
-
 type Props = {
   children: ReactNode;
   params: { locale: string };
@@ -52,7 +74,7 @@ export default async function layout({
   const messages = await getMessages(locale);
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Headbar />
