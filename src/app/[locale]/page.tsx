@@ -19,14 +19,14 @@ export default function Home({ params: {} }: Readonly<Props>) {
   // const tours: Record<string, ITour[]> = JSON.parse(jsonData);
 
   return (
-    <main className={styles.home}>
+    <section className={styles.home}>
       <section className={styles.home__header}>
         <div className={styles.home__header__logo}>
           <img src={`${baseUrl}/logo.png`} alt="Magica Zanzibar Logo" />
           <h2>{t("subtitle")}</h2>
-          <div className={styles.home__header__socials}>
-            <Socials />
-          </div>
+        </div>
+        <div className={styles.home__header__socials}>
+          <Socials />
         </div>
         <div className={styles.home__header__images}>
           <img
@@ -46,6 +46,6 @@ export default function Home({ params: {} }: Readonly<Props>) {
           />
         </div>
       </section>
-    </main>
+    </section>
   );
 }

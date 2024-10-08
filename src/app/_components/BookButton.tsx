@@ -15,6 +15,9 @@ const BookButton = ({
       href={`mailto:${mail}?subject=${
         tour_name ? tour_name : "Magica Zanzibar"
       }`}
+      style={{
+        whiteSpace: "nowrap",
+      }}
     >
       {text}
     </Button>

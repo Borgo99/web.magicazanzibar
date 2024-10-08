@@ -48,3 +48,19 @@ a {
     color-scheme: dark;
   }
 }
+
+@media (max-width: 1300px) {
+  html, body {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 650px) {
+  :root {
+    --page-padding-inline: 1.2rem;
+  }
+  html, body {
+    font-size: 50%;
+  }
+}

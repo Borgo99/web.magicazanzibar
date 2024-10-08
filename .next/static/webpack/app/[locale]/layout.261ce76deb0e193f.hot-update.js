@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/[locale]/layout",{
+
+/***/ "(app-pages-browser)/./src/app/_styles/components.module.css":
+/*!***********************************************!*\
+  !*** ./src/app/_styles/components.module.css ***!
+  \***********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"button\":\"components_button__XMpMh\",\"socials\":\"components_socials__CMCy9\",\"headbar\":\"components_headbar__zzYrT\",\"headbar__nav\":\"components_headbar__nav__3o828\",\"websiteName\":\"components_websiteName__FRTEZ\",\"localeSwitcher\":\"components_localeSwitcher__kr9mU\",\"toursList\":\"components_toursList__FOj_R\",\"toursList__card\":\"components_toursList__card__JQB0R\",\"toursList__card__img\":\"components_toursList__card__img__nK_o2\",\"aboutus\":\"components_aboutus__egvqc\",\"footer\":\"components_footer__kYfHj\"};\n    if(true) {\n      // 1728380720765\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"b22163a76f9b\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvX3N0eWxlcy9jb21wb25lbnRzLm1vZHVsZS5jc3MiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0I7QUFDbEIsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsd01BQWdMLGNBQWMsc0RBQXNEO0FBQ2xSLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0E7QUFDQSx5QkFBeUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vc3JjL2FwcC9fc3R5bGVzL2NvbXBvbmVudHMubW9kdWxlLmNzcz82ZDQ0Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxubW9kdWxlLmV4cG9ydHMgPSB7XCJidXR0b25cIjpcImNvbXBvbmVudHNfYnV0dG9uX19YTXBNaFwiLFwic29jaWFsc1wiOlwiY29tcG9uZW50c19zb2NpYWxzX19DTUN5OVwiLFwiaGVhZGJhclwiOlwiY29tcG9uZW50c19oZWFkYmFyX196ellyVFwiLFwiaGVhZGJhcl9fbmF2XCI6XCJjb21wb25lbnRzX2hlYWRiYXJfX25hdl9fM284MjhcIixcIndlYnNpdGVOYW1lXCI6XCJjb21wb25lbnRzX3dlYnNpdGVOYW1lX19GUlRFWlwiLFwibG9jYWxlU3dpdGNoZXJcIjpcImNvbXBvbmVudHNfbG9jYWxlU3dpdGNoZXJfX2tyOW1VXCIsXCJ0b3Vyc0xpc3RcIjpcImNvbXBvbmVudHNfdG91cnNMaXN0X19GT2pfUlwiLFwidG91cnNMaXN0X19jYXJkXCI6XCJjb21wb25lbnRzX3RvdXJzTGlzdF9fY2FyZF9fSlFCMFJcIixcInRvdXJzTGlzdF9fY2FyZF9faW1nXCI6XCJjb21wb25lbnRzX3RvdXJzTGlzdF9fY2FyZF9faW1nX19uS19vMlwiLFwiYWJvdXR1c1wiOlwiY29tcG9uZW50c19hYm91dHVzX19lZ3ZxY1wiLFwiZm9vdGVyXCI6XCJjb21wb25lbnRzX2Zvb3Rlcl9fa1lmSGpcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTcyODM4MDcyMDc2NVxuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvYW5kcmVhYm9yZ2hlc2kvRGVza3RvcC9QUk9HRVRUSS9aYW56aWJhckd1aWRlZFRvdXJzL3dlYi56YW56aWJhcmd1aWRlZHRvdXJzMi5ub3N5bmMvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9jb21waWxlZC9taW5pLWNzcy1leHRyYWN0LXBsdWdpbi9obXIvaG90TW9kdWxlUmVwbGFjZW1lbnQuanNcIikobW9kdWxlLmlkLCB7XCJwdWJsaWNQYXRoXCI6XCIvX25leHQvXCIsXCJlc01vZHVsZVwiOmZhbHNlLFwibG9jYWxzXCI6dHJ1ZX0pO1xuICAgICAgbW9kdWxlLmhvdC5kaXNwb3NlKGNzc1JlbG9hZCk7XG4gICAgICBcbiAgICB9XG4gIFxubW9kdWxlLmV4cG9ydHMuX19jaGVja3N1bSA9IFwiYjIyMTYzYTc2ZjliXCJcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/_styles/components.module.css\n"));
+
+/***/ })
+
+});

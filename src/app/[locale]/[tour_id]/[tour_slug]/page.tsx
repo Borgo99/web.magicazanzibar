@@ -4,6 +4,7 @@ import { ITour } from "@/app/_components/interfaces";
 import BookButton from "@/app/_components/BookButton";
 import Image from "next/image";
 import { baseUrl } from "@/app/_components/baseUrl";
+import classNames from "@/util/classNames";
 
 const tours: Record<string, ITour[]> = data as Record<string, ITour[]>;
 
@@ -35,8 +36,8 @@ export default function TourPage({ params }: { params: Params }) {
   )!;
 
   return (
-    <main className={styles.home}>
-      <section className={styles.home__header}>
+    <section className={styles.home}>
+      <section className={classNames(styles.home__header, styles.tourpage)}>
         <div className={styles.tour}>
           <h1>{tour.title}</h1>
           <p>{tour.content}</p>
@@ -60,29 +61,32 @@ export default function TourPage({ params }: { params: Params }) {
               ))}
             </ul>
           </div>
-          <p>
+          <p
+            style={{ lineHeight: 1.8, textAlign: "center" }}
+            className={styles.tourpage__bookBtns}
+          >
             <BookButton text="Book with us" tour_name={tour.title} /> or{" "}
-            <BookButton text="Contact us" /> for more info
+            <BookButton text="Contact us" />
           </p>
         </div>
         <div className={styles.home__header__images}>
-          <Image
+          <img
             src={`${baseUrl}/${tour.imageFolder}/1.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
-          <Image
+          <img
             src={`${baseUrl}/${tour.imageFolder}/2.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
-          <Image
+          <img
             src={`${baseUrl}/${tour.imageFolder}/3.webp`}
             alt={`${tour.title} photo`}
             loading={"lazy"}
           />
         </div>
       </section>
-    </main>
+    </section>
   );
 }

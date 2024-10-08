@@ -57,12 +57,19 @@ export default async function layout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Headbar />
-          {children}
-          <section className={styles.home__tours} id="tours">
-            <h1>Popular tours</h1>
-            <TourList tours={tours[locale]} />
-          </section>
-          <AboutUs />
+          <main
+            style={{
+              maxWidth: "140rem",
+              margin: "0 auto",
+            }}
+          >
+            {children}
+            <section className={styles.home__tours} id="tours">
+              <h1>Popular tours</h1>
+              <TourList tours={tours[locale]} />
+            </section>
+            <AboutUs />
+          </main>
           <Footer />
         </NextIntlClientProvider>
       </body>
