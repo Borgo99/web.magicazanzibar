@@ -1,8 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-// import fs from "fs";
-// import path from "path";
 import Socials from "../_components/Socials";
 import styles from "../_styles/pages.module.css";
 import { baseUrl } from "../_components/baseUrl";
@@ -12,11 +10,6 @@ type Props = {
 };
 export default function Home({ params: {} }: Readonly<Props>) {
   const t = useTranslations("Home");
-  // const jsonData = fs.readFileSync(
-  //   path.join(process.cwd(), "src/data", "tours.json"),
-  //   "utf-8"
-  // );
-  // const tours: Record<string, ITour[]> = JSON.parse(jsonData);
 
   return (
     <section className={styles.home}>

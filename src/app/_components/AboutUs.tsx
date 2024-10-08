@@ -1,23 +1,22 @@
+"use client";
+
 import React from "react";
 import styles from "../_styles/components.module.css";
 import BookButton from "./BookButton";
 import Socials from "./Socials";
+import { useTranslations } from "next-intl";
 
 const AboutUs = () => {
+  const t = useTranslations("Aboutus");
+
   return (
     <div className={styles.aboutus}>
-      <h1>Why Choose Us</h1>
-      <p>
-        Enjoy a personalized experience in <b>intimate groups</b>, ensuring you
-        get the most out of your tour.
-      </p>
-      <p>
-        We are committed to <b>sustainable tourism</b> practices that benefit
-        local communities and preserve cultural heritage.
-      </p>
+      <h1>{t("title")}</h1>
+      <p>{t("content1")}</p>
+      <p>{t("content2")}</p>
       <Socials />
       <div>
-        <BookButton text="Contact us" />
+        <BookButton text={t("contact_us")} />
       </div>
     </div>
   );

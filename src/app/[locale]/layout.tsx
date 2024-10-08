@@ -4,12 +4,11 @@ import Headbar from "../_components/Headbar";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import TourList from "../_components/TourList";
 import { ITour } from "../_components/interfaces";
-import styles from "../_styles/pages.module.css";
 import AboutUs from "../_components/AboutUs";
 import Footer from "../_components/Footer";
 import data from "../../data/tours.json";
+import ToursListSection from "../_components/ToursListSection";
 
 const tours: Record<string, ITour[]> = data as Record<string, ITour[]>;
 
@@ -64,10 +63,7 @@ export default async function layout({
             }}
           >
             {children}
-            <section className={styles.home__tours} id="tours">
-              <h1>Popular tours</h1>
-              <TourList tours={tours[locale]} />
-            </section>
+            <ToursListSection tours={tours[locale]} />
             <AboutUs />
           </main>
           <Footer />

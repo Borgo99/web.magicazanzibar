@@ -5,5 +5,25 @@
   },
   "LocaleSwitcher": {
     "locale": "{locale, select, it {Italiano} en {English} other {Unknown}}"
+  },
+  "Aboutus": {
+    "title": "Why Choose Us",
+    "content1": "Enjoy a personalized experience in intimate groups, ensuring you get the most out of your tour.",
+    "content2": "We are committed to sustainable tourism practices that benefit local communities and preserve cultural heritage.",
+    "contact_us": "Contact us"
+  },
+  "General": {
+    "check_reviews": "Check our reviews: ",
+    "read_more": "Read more",
+    "contact_us": "Contact us",
+    "book": "Book with us",
+    "or": "or"
+  },
+  "TourPage": {
+    "highlights": "Highlights",
+    "what_to_expect": "What To Expect",
+    "contact_us": "Contact us",
+    "book": "Book with us",
+    "or": "or"
   }
 }

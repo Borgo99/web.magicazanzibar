@@ -1,11 +1,16 @@
+"use client";
+
 import React from "react";
 import styles from "../_styles/components.module.css";
 import { baseUrl } from "./baseUrl";
+import { useTranslations } from "next-intl";
 
 const Socials = () => {
+  const t = useTranslations("General");
+
   return (
     <div className={styles.socials}>
-      <p>Check our reviews: </p>
+      <p>{t("check_reviews")}</p>
       <a
         target={"_blank"}
         href="https://www.tripadvisor.co.uk/Attraction_Review-g482884-d23183731-Reviews-MAGICA_ZANZIBAR-Zanzibar_Island_Zanzibar_Archipelago.html"

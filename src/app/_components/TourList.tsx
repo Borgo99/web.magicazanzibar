@@ -6,11 +6,13 @@ import Button from "./Button";
 import { usePathname, useRouter } from "next/navigation";
 import styles from "../_styles/components.module.css";
 import { baseUrl } from "./baseUrl";
+import { useTranslations } from "next-intl";
 
 interface ITourList {
   tours: ITour[];
 }
 const TourList = ({ tours }: ITourList) => {
+  const t = useTranslations("General");
   const pathname = usePathname();
   const router = useRouter();
   const tourPageUrl = (tour: ITour) =>
@@ -34,7 +36,7 @@ const TourList = ({ tours }: ITourList) => {
             }}
           ></div>
           <h2>{tour.title}</h2>
-          <Button href={tourPageUrl(tour)}>Read more</Button>
+          <Button href={tourPageUrl(tour)}>{t("read_more")}</Button>
         </li>
       ))}
     </ul>
